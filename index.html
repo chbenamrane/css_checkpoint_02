@@ -55,19 +55,62 @@
             online reputation. With our integrated end-to-end solution, doctors
             are able not only to improve their online presence, but also to
             devote their time to what really matters: their patients.
+            <br />Please check
+            <a class="blue_link" href=""
+              >2025 Docplanner Trust and Transparency Report</a
+            >
           </p>
         </div>
 
         <div class="cards">
-          <div class="card">
-            <img src="./images/icon-patients.svg" alt="" />
-            <h3>For patients</h3>
-            <p>
-              Find a doctor, book a visit and solve any health-related doubt
-            </p>
+          <div class="card c_1">
+            <div>
+              <img src="./images/icon-patients.svg" alt="" />
+              <h3>For patients</h3>
+              <p>
+                Find a doctor, book a visit and solve any health-related doubt
+              </p>
+            </div>
             <select name="countries" id="countries">
-              Choose country
               <option value="0">Choose country</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Chile">Chile</option>
+              <option value="Spain">Spain</option>
+            </select>
+          </div>
+
+          <div class="card c_2">
+            <div>
+              <img src="./images/icon-doctors.svg" alt="" />
+              <h3>For doctors</h3>
+              <p>Save time managing visits and cut no-shows by half</p>
+            </div>
+            <select name="countries" id="countries">
+              <option value="0">Choose country</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Chile">Chile</option>
+              <option value="Spain">Spain</option>
+            </select>
+          </div>
+
+          <div class="card c_3">
+            <div>
+              <img src="./images/icon-clinics.svg" alt="" />
+              <h3>For clinics</h3>
+              <p>Deliver an exceptional patient experience in your clinic</p>
+            </div>
+            <select name="specialists" id="specialists">
+              <option value="0">2 to 20 specialists</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Chile">Chile</option>
+              <option value="Spain">Spain</option>
+            </select>
+
+            <select name="specialists2" id="specialists2">
+              <option value="0">More than 20 specialists</option>
               <option value="Argentina">Argentina</option>
               <option value="Brazil">Brazil</option>
               <option value="Chile">Chile</option>
@@ -160,4 +203,15 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      let navbar = document.querySelector("header");
+      if (window.scrollY > 1) {
+        navbar.classList.add("shadow");
+      } else {
+        navbar.classList.remove("shadow");
+      }
+    });
+  </script>
 </html>

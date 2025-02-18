@@ -383,6 +383,30 @@ header .navbar ul li .active {
   color: var(--secondary);
 }
 
+.section_03 .container .btn_3 {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 15px;
+}
+
 /* End Section 03  */
 
 /* Start Footer */
+footer {
+  padding: 20px;
+  border-top: solid 1px #eee;
+}
+
+footer .container {
+  text-align: center;
+}
+
+footer .container p {
+  color: #aaa;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+footer .container a {
+  font-size: 12px;
+}

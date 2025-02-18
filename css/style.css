@@ -50,6 +50,7 @@ header {
   position: fixed;
   margin: auto;
   width: 100%;
+  z-index: 1000;
 }
 
 .shadow {
@@ -162,6 +163,61 @@ header .navbar ul li .active {
   background-color: #1b2734;
 }
 
+.section_01 .container .logos {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.section_01 .container .logos .titles_logos {
+  width: 25%;
+}
+
+.section_01 .container .logos .titles_logos h1 {
+  font-size: 1.625em;
+}
+
+.section_01 .container .logos .logos_com {
+  list-style: none;
+  align-items: center;
+  width: 67%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section_01 .container .logos_com li img {
+  opacity: 0.5;
+}
+
+.section_01 .container .logos_com li {
+  padding: 10px;
+}
+
+.section_01 .container .logos_com img,
+.section_01 .container .logos_com svg {
+  width: 100%;
+  height: 20px;
+  filter: grayscale(100%);
+  fill: hsla(0, 0%, 67%, 0.7);
+  transition: all 800ms ease;
+}
+
+.section_01 .container .logos_com img #gipo {
+  height: 34px !important;
+}
+
+.section_01 .container .logos_com img:hover,
+.section_01 .container .logos_com svg:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
+  fill: var(--primary);
+}
+
 /* End section 01 */
+
+.section_02 {
+  background-color: #e5faf8;
+  padding: 20px;
+}
 
 /* Start section 02 */

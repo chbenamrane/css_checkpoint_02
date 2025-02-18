@@ -36,6 +36,22 @@ a:hover {
   color: var(--primary);
 }
 
+button {
+  background-color: #3d83df;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
 .blue_link {
   color: #3d83df;
 }
@@ -224,10 +240,13 @@ header .navbar ul li .active {
     rgba(61, 199, 223, 0.1)
   );
   padding: 20px;
+  overflow: hidden;
 }
 
 .section_02 .container {
   display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .section_02 .container .title_2 {
@@ -241,12 +260,14 @@ header .navbar ul li .active {
 
 .section_02 .container .title_2 p {
   color: var(--secondary);
+  font-size: 14px;
 }
 
 .section_02 .container .cards_2 {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
+  gap: 20px;
 }
 
 .section_02 .container .cards_2 .card_2 {
@@ -258,10 +279,9 @@ header .navbar ul li .active {
   align-items: center;
   justify-content: space-evenly;
   background-color: #fff;
-  width: 45%;
-  margin: 10px;
+  width: calc(50% - 20px);
   height: 250px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .section_02 .container .cards_2 .card_2:first-child {
@@ -269,7 +289,7 @@ header .navbar ul li .active {
 }
 
 .section_02 .container .cards_2 .card_2:last-child {
-  margin-top: -20px;
+  margin-top: -40px;
 }
 
 .section_02 .container .cards_2 .card_2 img {
@@ -285,7 +305,8 @@ header .navbar ul li .active {
 
 .section_02 .container .cards_2 .card_2 p {
   color: var(--secondary);
-  font-size: 14px;
+  font-size: 12px;
+  text-align: center;
 }
 
 /* End Section 02  */
@@ -293,6 +314,75 @@ header .navbar ul li .active {
 /* Start Section 03  */
 
 .section_03 {
-  padding: 20px;
-  padding-top: 60px;
+  padding: 80px 20px;
 }
+
+.section_03 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.section_03 .container h1 {
+  max-width: 460px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.section_03 .container p {
+  max-width: 460px;
+  text-align: center;
+  color: var(--secondary);
+  line-height: 25px;
+  font-size: 0.875em;
+}
+
+.section_03 .container .cards_3 {
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.section_03 .container .cards_3 .card_3 {
+  width: calc(33.33% - 20px);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  border: solid 1px #eee;
+}
+
+.section_03 .container .cards_3 .card_3:hover {
+  box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.13);
+  cursor: pointer;
+}
+
+.section_03 .container .cards_3 .card_3 img {
+  height: 270px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section_03 .container .cards_3 .card_3 .sub_card_3 {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.section_03 .container .cards_3 .card_3 .sub_card_3 h4 {
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.section_03 .container .subtitle_3 {
+  color: var(--secondary);
+}
+
+/* End Section 03  */
+
+/* Start Footer */

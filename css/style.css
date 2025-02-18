@@ -344,6 +344,7 @@ header .navbar ul li .active {
   margin-bottom: 50px;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .section_03 .container .cards_3 .card_3 {
@@ -353,6 +354,7 @@ header .navbar ul li .active {
   border-radius: 5px;
   overflow: hidden;
   border: solid 1px #eee;
+  transition: all 1s ease;
 }
 
 .section_03 .container .cards_3 .card_3:hover {
